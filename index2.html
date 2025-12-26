@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGC NET Philosophy Practice Exam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">UGC NET Philosophy Revision</div>
+        <div id="timer">Time Left: 180:00</div>
+    </header>
+
+    <main class="exam-container">
+        <section class="question-panel">
+            <div id="question-meta">Question <span id="q-number">1</span> of 150</div>
+            <div id="question-text" class="question-box">
+                </div>
+            <div id="options-container" class="options-grid">
+                </div>
+            <div class="controls">
+                <button id="prev-btn" onclick="prevQuestion()">Previous</button>
+                <button id="mark-btn" onclick="markForReview()">Mark for Review</button>
+                <button id="next-btn" onclick="nextQuestion()">Save & Next</button>
+            </div>
+        </section>
+
+        <aside class="navigation-panel">
+            <h3>Question Palette</h3>
+            <div id="palette" class="palette-grid">
+                </div>
+            <div class="legend">
+                <span><div class="box visited"></div> Answered</span>
+                <span><div class="box marked"></div> Marked</span>
+                <span><div class="box"></div> Not Visited</span>
+            </div>
+            <button id="submit-exam" onclick="finishExam()">Submit Exam</button>
+        </aside>
+    </main>
+
+    <script src="script2.js"></script>
+</body>
+</html>
